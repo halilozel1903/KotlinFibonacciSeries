@@ -12,7 +12,5 @@ fun main() {
         firstNumber = secondNumber
         secondNumber = total
     }
-
-
 }
 
