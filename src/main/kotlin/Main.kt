@@ -6,7 +6,7 @@ fun main() {
     print("Fibonacci Series up to $range terms: ")
 
     for (index in 1..range) {
-        print("$firstNumber - ".removeSuffix("-"))
+        print("$firstNumber - ")
 
         val total = firstNumber + secondNumber
         firstNumber = secondNumber
