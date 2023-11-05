@@ -3,14 +3,15 @@ fun main() {
     var firstNumber = 0
     var secondNumber = 1
 
-    print("Fibonacci Series up to $range terms: ")
+    val fibonacciSeries = mutableListOf<Int>()
+    fibonacciSeries.add(firstNumber)
 
-    for (index in 1..range) {
-        print("$firstNumber - ")
-
+    for (index in 1 until range) {
         val total = firstNumber + secondNumber
+        fibonacciSeries.add(total)
         firstNumber = secondNumber
         secondNumber = total
     }
-}
 
+    print("Fibonacci Series up to $range terms: ${fibonacciSeries.joinToString(" - ")}")
+}
